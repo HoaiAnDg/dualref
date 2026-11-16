@@ -1,0 +1,242 @@
+[
+  {
+    "id": "M01",
+    "category": "Number Theory",
+    "problem": "Tìm hai chữ số tận cùng của tổng: S = 1! + 2! + 3! + ... + 2026!.",
+    "ground_truth": "13"
+  },
+  {
+    "id": "M02",
+    "category": "Combinatorics",
+    "problem": "Có bao nhiêu xâu nhị phân độ dài 10 không chứa ba số 0 liên tiếp?",
+    "ground_truth": "504"
+  },
+  {
+    "id": "M03",
+    "category": "Algebra",
+    "problem": "Tìm số nghiệm nguyên dương của phương trình x*y + 2x + 3y = 2026.",
+    "ground_truth": "6"
+  },
+  {
+    "id": "M04",
+    "category": "Number Theory",
+    "problem": "Tìm số dư khi chia 7^(2026) cho 100.",
+    "ground_truth": "49"
+  },
+  {
+    "id": "M05",
+    "category": "Geometry / Algebra",
+    "problem": "Tìm giá trị nhỏ nhất của biểu thức P = sqrt(x^2 + (1 - y)^2) + sqrt((x - 1)^2 + y^2) với mọi x, y thuộc R.",
+    "ground_truth": "sqrt(2)"
+  },
+  {
+    "id": "M06",
+    "category": "Polynomials",
+    "problem": "Cho đa thức P(x) = (x - 1)(x - 2)...(x - 10). Hệ số của x^9 trong đa thức P(x) bằng bao nhiêu?",
+    "ground_truth": "-55"
+  },
+  {
+    "id": "M07",
+    "category": "Probability",
+    "problem": "Tung một đồng xu công bằng liên tiếp. Kỳ vọng số lần tung để lần đầu tiên xuất hiện cụm 'Ngửa - Sấp' (HT) là bao nhiêu?",
+    "ground_truth": "4"
+  },
+  {
+    "id": "M08",
+    "category": "Number Theory",
+    "problem": "Tìm ước chung lớn nhất của hai số: 2^2026 - 1 và 2^2022 - 1.",
+    "ground_truth": "3"
+  },
+  {
+    "id": "M09",
+    "category": "Combinatorics",
+    "problem": "Có bao nhiêu cách chia 8 cái kẹo giống nhau cho 4 đứa trẻ sao cho mỗi đứa trẻ nhận được ít nhất 1 cái kẹo?",
+    "ground_truth": "35"
+  },
+  {
+    "id": "M10",
+    "category": "Algebra",
+    "problem": "Cho x + 1/x = 3. Tính giá trị chính xác của biểu thức Q = x^5 + 1/(x^5).",
+    "ground_truth": "123"
+  },
+  {
+    "id": "M11",
+    "category": "Combinatorics",
+    "problem": "Tính số tập con khác rỗng của tập hợp S = {1, 2, 3, 4, 5, 6, 7, 8} sao cho tổng các phần tử trong tập con đó là một số lẻ.",
+    "ground_truth": "128"
+  },
+  {
+    "id": "M12",
+    "category": "Calculus / Sequence",
+    "problem": "Tính tổng của chuỗi vô hạn: S = 1/2 + 2/4 + 3/8 + 4/16 + ... + n/(2^n) + ...",
+    "ground_truth": "2"
+  },
+  {
+    "id": "M13",
+    "category": "Number Theory",
+    "problem": "Số ước nguyên dương của số 360000 là bao nhiêu?",
+    "ground_truth": "105"
+  },
+  {
+    "id": "M14",
+    "category": "Linear Algebra",
+    "problem": "Cho ma trận vuông A cấp 3 thỏa mãn det(A) = 4. Tính định thức của ma trận 2 * A^(-1).",
+    "ground_truth": "2"
+  },
+  {
+    "id": "M15",
+    "category": "Trigonometry",
+    "problem": "Tính giá trị của tích P = cos(20 độ) * cos(40 độ) * cos(80 độ).",
+    "ground_truth": "1/8"
+  },
+  {
+    "id": "M16",
+    "category": "Probability",
+    "problem": "Chọn ngẫu nhiên 3 đỉnh từ một đa giác đều 12 cạnh. Xác suất để tam giác tạo thành là tam giác vuông bằng bao nhiêu?",
+    "ground_truth": "3/11"
+  },
+  {
+    "id": "M17",
+    "category": "Number Theory",
+    "problem": "Tìm nghiệm nguyên không âm x nhỏ nhất thỏa mãn hệ đồng dư: x đồng dư 2 (mod 3), x đồng dư 3 (mod 5), x đồng dư 2 (mod 7).",
+    "ground_truth": "23"
+  },
+  {
+    "id": "M18",
+    "category": "Algebra",
+    "problem": "Tìm số nghiệm thực của phương trình: 2^x + 3^x = 5^x.",
+    "ground_truth": "1"
+  },
+  {
+    "id": "M19",
+    "category": "Logarithms",
+    "problem": "Nếu log_3(2) = a và log_3(5) = b, hãy tính log_3(50) theo a và b.",
+    "ground_truth": "a + 2b"
+  },
+  {
+    "id": "M20",
+    "category": "Combinatorics",
+    "problem": "Một bàn tròn có 6 ghế đánh số. Có bao nhiêu cách xếp 3 nam và 3 nữ ngồi quanh bàn sao cho không có 2 người cùng giới nào ngồi cạnh nhau?",
+    "ground_truth": "72"
+  },
+  {
+    "id": "M21",
+    "category": "Number Theory",
+    "problem": "Tìm số dư khi chia 3^2027 cho 11.",
+    "ground_truth": "9"
+  },
+  {
+    "id": "M22",
+    "category": "Number Theory",
+    "problem": "Số ước nguyên dương của số 5040 là bao nhiêu?",
+    "ground_truth": "60"
+  },
+  {
+    "id": "M23",
+    "category": "Combinatorics",
+    "problem": "Có bao nhiêu xâu nhị phân độ dài 12 không chứa hai số 1 liên tiếp?",
+    "ground_truth": "377"
+  },
+  {
+    "id": "M24",
+    "category": "Combinatorics",
+    "problem": "Từ một nhóm gồm 6 nam và 5 nữ, có bao nhiêu cách chọn ra một ban gồm 3 nam và 2 nữ?",
+    "ground_truth": "200"
+  },
+  {
+    "id": "M25",
+    "category": "Probability",
+    "problem": "Tung ba đồng xu cân đối. Xác suất để có đúng 2 mặt ngửa là bao nhiêu?",
+    "ground_truth": "3/8"
+  },
+  {
+    "id": "M26",
+    "category": "Algebra",
+    "problem": "Tính tổng bình phương các nghiệm của phương trình x^3 - 6x^2 + 11x - 6 = 0.",
+    "ground_truth": "14"
+  },
+  {
+    "id": "M27",
+    "category": "Sequences",
+    "problem": "Cho dãy số a_1 = 2 và a_(n+1) = 2*a_n + 1 với mọi n >= 1. Tính a_8.",
+    "ground_truth": "383"
+  },
+  {
+    "id": "M28",
+    "category": "Geometry",
+    "problem": "Một tam giác vuông có hai cạnh góc vuông dài 9 và 12. Tính bán kính đường tròn nội tiếp tam giác đó.",
+    "ground_truth": "3"
+  },
+  {
+    "id": "M29",
+    "category": "Calculus",
+    "problem": "Cho hàm số f(x) = x^4 - 3x^2. Tính đạo hàm cấp hai f''(2).",
+    "ground_truth": "42"
+  },
+  {
+    "id": "M30",
+    "category": "Linear Algebra",
+    "problem": "Cho ma trận A = [[2, 1], [1, 3]]. Tính det(A^3).",
+    "ground_truth": "125"
+  },
+  {
+    "id": "M31",
+    "category": "Number Theory",
+    "problem": "Tìm ước chung lớn nhất của hai số: 2^30 - 1 và 2^45 - 1.",
+    "ground_truth": "32767"
+  },
+  {
+    "id": "M32",
+    "category": "Combinatorics",
+    "problem": "Có bao nhiêu cách xếp 5 người thành một hàng ngang sao cho hai người A và B đứng cạnh nhau?",
+    "ground_truth": "48"
+  },
+  {
+    "id": "M33",
+    "category": "Number Theory",
+    "problem": "Tìm số nguyên không âm x nhỏ nhất thỏa mãn hệ đồng dư: x đồng dư 1 (mod 4), x đồng dư 2 (mod 5), x đồng dư 3 (mod 7).",
+    "ground_truth": "17"
+  },
+  {
+    "id": "M34",
+    "category": "Combinatorics",
+    "problem": "Tìm số nghiệm nguyên dương của phương trình x + y + z = 12.",
+    "ground_truth": "55"
+  },
+  {
+    "id": "M35",
+    "category": "Series",
+    "problem": "Tính tổng S = 1/(1*2) + 1/(2*3) + 1/(3*4) + ... + 1/(99*100).",
+    "ground_truth": "99/100"
+  },
+  {
+    "id": "M36",
+    "category": "Trigonometry",
+    "problem": "Tính giá trị của biểu thức P = sin(15 độ) * cos(15 độ).",
+    "ground_truth": "1/4"
+  },
+  {
+    "id": "M37",
+    "category": "Logarithms",
+    "problem": "Nếu log_2(3) = a, hãy tính log_2(72) theo a.",
+    "ground_truth": "3 + 2a"
+  },
+  {
+    "id": "M38",
+    "category": "Combinatorics",
+    "problem": "Có bao nhiêu tập con (kể cả tập rỗng) của tập S = {1, 2, ..., 10} không chứa hai số nguyên liên tiếp?",
+    "ground_truth": "144"
+  },
+  {
+    "id": "M39",
+    "category": "Probability",
+    "problem": "Một hộp có 4 bi đỏ và 6 bi xanh. Rút ngẫu nhiên đồng thời 2 bi. Xác suất để hai bi cùng màu là bao nhiêu?",
+    "ground_truth": "7/15"
+  },
+  {
+    "id": "M40",
+    "category": "Number Theory",
+    "problem": "Tìm số dư khi chia 2^100 cho 7.",
+    "ground_truth": "2"
+  }
+]
