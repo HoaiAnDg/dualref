@@ -1,0 +1,2123 @@
+{
+  "generated_at": "2026-11-20T22:35:23.823967",
+  "input_files": [
+    "Data\\stage3_batch3_custom40.jsonl"
+  ],
+  "output_dir": "D:\\HK1 2026-2027\\DA-CNTT\\EVAL_OUTPUT\\eval_report\\stage3_batch3_custom40",
+  "integrity": {
+    "total_records_loaded": 200,
+    "json_parse_errors": [],
+    "duplicate_keys_count": 0,
+    "duplicates_sample": [],
+    "missing_fields_count": 0,
+    "logic_mismatches_count": 0,
+    "logic_mismatches": [],
+    "coverage_by_method_seed": {
+      "DIRECT (seed=0)": {
+        "total_records": 40,
+        "unique_ids": 40,
+        "missing_math500_count": 0,
+        "missing_math500_sample": []
+      },
+      "DUALREF (seed=0)": {
+        "total_records": 40,
+        "unique_ids": 40,
+        "missing_math500_count": 0,
+        "missing_math500_sample": []
+      },
+      "DUALREF_NOCRIT (seed=0)": {
+        "total_records": 40,
+        "unique_ids": 40,
+        "missing_math500_count": 0,
+        "missing_math500_sample": []
+      },
+      "PAL@5 (seed=0)": {
+        "total_records": 40,
+        "unique_ids": 40,
+        "missing_math500_count": 0,
+        "missing_math500_sample": []
+      },
+      "SC@5 (seed=0)": {
+        "total_records": 40,
+        "unique_ids": 40,
+        "missing_math500_count": 0,
+        "missing_math500_sample": []
+      }
+    }
+  },
+  "methods": {
+    "DIRECT": {
+      "n": 40,
+      "n_correct": 13,
+      "accuracy_pct": 32.5,
+      "ci95_low_pct": 20.084316962661728,
+      "ci95_high_pct": 47.982541911102025,
+      "false_negative_suspects_count": 0,
+      "adjusted_accuracy_pct": 32.5,
+      "oracle_accuracy_pct": null,
+      "oracle_gap_pct": null,
+      "pal_any_accuracy_pct": null,
+      "cross_validated_rate_pct": null,
+      "accuracy_when_cv_pct": null,
+      "accuracy_when_not_cv_pct": 32.5,
+      "llm_calls": {
+        "count": 40,
+        "sum": 42.0,
+        "mean": 1.05,
+        "std": 0.22072142786315224,
+        "min": 1.0,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0499999999999972,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "elapsed_sec": {
+        "count": 40,
+        "sum": 1549.251,
+        "mean": 38.731275,
+        "std": 37.42966033398256,
+        "min": 8.176,
+        "p50": 25.6675,
+        "p90": 87.1603,
+        "p95": 111.84434999999996,
+        "p99": 161.90564999999998,
+        "max": 185.526
+      },
+      "prompt_tokens": {
+        "count": 40,
+        "sum": 7172.0,
+        "mean": 179.3,
+        "std": 91.54407653539332,
+        "min": 142.0,
+        "p50": 163.5,
+        "p90": 175.6,
+        "p95": 199.89999999999958,
+        "p99": 564.6299999999999,
+        "max": 714.0
+      },
+      "completion_tokens": {
+        "count": 40,
+        "sum": 15944.0,
+        "mean": 398.6,
+        "std": 366.3634737140083,
+        "min": 86.0,
+        "p50": 308.0,
+        "p90": 698.2000000000002,
+        "p95": 958.6499999999991,
+        "p99": 1746.5299999999995,
+        "max": 2048.0
+      },
+      "total_tokens": {
+        "count": 40,
+        "sum": 23116.0,
+        "mean": 577.9,
+        "std": 380.1635815250439,
+        "min": 228.0,
+        "p50": 474.0,
+        "p90": 943.1000000000003,
+        "p95": 1209.0999999999995,
+        "p99": 1903.2099999999996,
+        "max": 2200.0
+      },
+      "tokens_generator_model": {
+        "count": 40,
+        "sum": 23116.0,
+        "mean": 577.9,
+        "std": 380.1635815250439,
+        "min": 228.0,
+        "p50": 474.0,
+        "p90": 943.1000000000003,
+        "p95": 1209.0999999999995,
+        "p99": 1903.2099999999996,
+        "max": 2200.0
+      },
+      "tokens_other_model": {
+        "count": 40,
+        "sum": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "n_samples": {
+        "count": 0,
+        "sum": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "acc_pct_per_1k_tokens": 56.2381034781104,
+      "acc_pct_per_sec": 0.8391151595190193,
+      "truncation_diagnostics": {
+        "any_truncated_pct": 22.5,
+        "cot_truncated_pct": 0.0,
+        "token_estimated_pct": 20.0,
+        "loop_guard_abort_pct": 0.0
+      },
+      "auxiliary_modules": {
+        "total_pal_calls": 0,
+        "pal_exec_ok": 0,
+        "pal_exec_success_rate_pct": null,
+        "debug_calls": 0,
+        "debug_fixed": 0,
+        "debug_fix_rate_pct": null,
+        "critic_calls": 0,
+        "critic_parse_fail": 0,
+        "critic_parse_fail_rate_pct": null,
+        "local_vetoes": 0,
+        "local_veto_rate_pct": 0.0
+      },
+      "stop_reason_breakdown": {
+        "SINGLE_SAMPLE": {
+          "count": 30,
+          "share_pct": 75.0,
+          "accuracy_pct": 43.333333333333336,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 451.7,
+          "mean_sec": 24.88543333333333
+        },
+        "NO_ANSWER": {
+          "count": 10,
+          "share_pct": 25.0,
+          "accuracy_pct": 0.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 956.5,
+          "mean_sec": 80.2688
+        }
+      },
+      "route_breakdown": {},
+      "category_breakdown": {
+        "Algebra": {
+          "count": 4,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 1166.0,
+          "mean_sec": 106.976
+        },
+        "Calculus": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 316.0,
+          "mean_sec": 12.639
+        },
+        "Calculus / Sequence": {
+          "count": 1,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 867.0,
+          "mean_sec": 76.897
+        },
+        "Combinatorics": {
+          "count": 9,
+          "accuracy_pct": 22.22222222222222,
+          "adj_accuracy_pct": 22.22222222222222,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 573.3333333333334,
+          "mean_sec": 35.129555555555555
+        },
+        "Geometry": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 481.0,
+          "mean_sec": 28.084
+        },
+        "Geometry / Algebra": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 691.0,
+          "mean_sec": 43.096
+        },
+        "Linear Algebra": {
+          "count": 2,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 383.0,
+          "mean_sec": 20.242
+        },
+        "Logarithms": {
+          "count": 2,
+          "accuracy_pct": 50.0,
+          "adj_accuracy_pct": 50.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 349.5,
+          "mean_sec": 8.908000000000001
+        },
+        "Number Theory": {
+          "count": 10,
+          "accuracy_pct": 30.0,
+          "adj_accuracy_pct": 30.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 502.5,
+          "mean_sec": 37.806599999999996
+        },
+        "Polynomials": {
+          "count": 1,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 486.0,
+          "mean_sec": 26.03
+        },
+        "Probability": {
+          "count": 4,
+          "accuracy_pct": 25.0,
+          "adj_accuracy_pct": 25.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 673.5,
+          "mean_sec": 32.1495
+        },
+        "Sequences": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 295.0,
+          "mean_sec": 10.66
+        },
+        "Series": {
+          "count": 1,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 325.0,
+          "mean_sec": 12.543
+        },
+        "Trigonometry": {
+          "count": 2,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 323.5,
+          "mean_sec": 15.134
+        }
+      },
+      "seed_breakdown": {
+        "0": {
+          "count": 40,
+          "accuracy_pct": 32.5,
+          "oracle_acc_pct": null,
+          "mean_tokens": 577.9,
+          "mean_sec": 38.731275
+        }
+      }
+    },
+    "DUALREF": {
+      "n": 40,
+      "n_correct": 28,
+      "accuracy_pct": 70.0,
+      "ci95_low_pct": 54.56968934567959,
+      "ci95_high_pct": 81.92532908430469,
+      "false_negative_suspects_count": 0,
+      "adjusted_accuracy_pct": 70.0,
+      "oracle_accuracy_pct": 85.0,
+      "oracle_gap_pct": 15.000000000000002,
+      "pal_any_accuracy_pct": 70.0,
+      "cross_validated_rate_pct": 40.0,
+      "accuracy_when_cv_pct": 81.25,
+      "accuracy_when_not_cv_pct": 62.5,
+      "llm_calls": {
+        "count": 40,
+        "sum": 313.0,
+        "mean": 7.825,
+        "std": 4.505765537278108,
+        "min": 3.0,
+        "p50": 7.0,
+        "p90": 15.100000000000001,
+        "p95": 16.049999999999997,
+        "p99": 17.0,
+        "max": 17.0
+      },
+      "elapsed_sec": {
+        "count": 40,
+        "sum": 4125.223,
+        "mean": 103.130575,
+        "std": 89.93078018915509,
+        "min": 13.841,
+        "p50": 68.452,
+        "p90": 210.8265000000001,
+        "p95": 310.90844999999996,
+        "p99": 347.95632,
+        "max": 356.307
+      },
+      "prompt_tokens": {
+        "count": 40,
+        "sum": 95735.0,
+        "mean": 2393.375,
+        "std": 1491.4995669906623,
+        "min": 610.0,
+        "p50": 2007.0,
+        "p90": 4749.799999999999,
+        "p95": 5114.2,
+        "p99": 5282.27,
+        "max": 5363.0
+      },
+      "completion_tokens": {
+        "count": 40,
+        "sum": 57774.0,
+        "mean": 1444.35,
+        "std": 1191.3844252456672,
+        "min": 306.0,
+        "p50": 1008.0,
+        "p90": 3159.0000000000005,
+        "p95": 3462.8499999999976,
+        "p99": 4807.789999999999,
+        "max": 5135.0
+      },
+      "total_tokens": {
+        "count": 40,
+        "sum": 153509.0,
+        "mean": 3837.725,
+        "std": 2611.421785723003,
+        "min": 916.0,
+        "p50": 3060.0,
+        "p90": 7491.0,
+        "p95": 8208.749999999998,
+        "p99": 9959.02,
+        "max": 10498.0
+      },
+      "tokens_generator_model": {
+        "count": 40,
+        "sum": 122821.0,
+        "mean": 3070.525,
+        "std": 2009.7000795181814,
+        "min": 916.0,
+        "p50": 2590.0,
+        "p90": 5971.8,
+        "p95": 6140.649999999996,
+        "p99": 8117.469999999999,
+        "max": 8596.0
+      },
+      "tokens_other_model": {
+        "count": 40,
+        "sum": 30688.0,
+        "mean": 767.2,
+        "std": 735.3645947280078,
+        "min": 0.0,
+        "p50": 578.5,
+        "p90": 1910.3,
+        "p95": 2174.2,
+        "p99": 2580.08,
+        "max": 2825.0
+      },
+      "n_samples": {
+        "count": 40,
+        "sum": 216.0,
+        "mean": 5.4,
+        "std": 2.447395266348203,
+        "min": 3.0,
+        "p50": 5.0,
+        "p90": 9.0,
+        "p95": 9.0,
+        "p99": 9.0,
+        "max": 9.0
+      },
+      "acc_pct_per_1k_tokens": 18.23997290061169,
+      "acc_pct_per_sec": 0.6787511850874487,
+      "truncation_diagnostics": {
+        "any_truncated_pct": 15.0,
+        "cot_truncated_pct": 15.0,
+        "token_estimated_pct": 10.0,
+        "loop_guard_abort_pct": 0.0
+      },
+      "auxiliary_modules": {
+        "total_pal_calls": 117,
+        "pal_exec_ok": 103,
+        "pal_exec_success_rate_pct": 88.03418803418803,
+        "debug_calls": 24,
+        "debug_fixed": 10,
+        "debug_fix_rate_pct": 41.66666666666667,
+        "critic_calls": 60,
+        "critic_parse_fail": 0,
+        "critic_parse_fail_rate_pct": 0.0,
+        "local_vetoes": 15,
+        "local_veto_rate_pct": 37.5
+      },
+      "stop_reason_breakdown": {
+        "MARGIN": {
+          "count": 18,
+          "share_pct": 45.0,
+          "accuracy_pct": 77.77777777777779,
+          "oracle_acc_pct": 83.33333333333334,
+          "mean_samples": 4.666666666666667,
+          "mean_tokens": 3215.3888888888887,
+          "mean_sec": 81.91533333333334
+        },
+        "CROSS_VALIDATED": {
+          "count": 16,
+          "share_pct": 40.0,
+          "accuracy_pct": 81.25,
+          "oracle_acc_pct": 87.5,
+          "mean_samples": 4.875,
+          "mean_tokens": 2895.25,
+          "mean_sec": 73.6176875
+        },
+        "KMAX": {
+          "count": 6,
+          "share_pct": 15.0,
+          "accuracy_pct": 16.666666666666664,
+          "oracle_acc_pct": 83.33333333333334,
+          "mean_samples": 9.0,
+          "mean_tokens": 8218.0,
+          "mean_sec": 245.47733333333335
+        }
+      },
+      "route_breakdown": {
+        "PAL_FIRST": {
+          "count": 29,
+          "share_pct": 72.5,
+          "accuracy_pct": 72.41379310344827,
+          "oracle_acc_pct": 82.75862068965517,
+          "mean_tokens": 3567.206896551724,
+          "mean_sec": 91.66358620689655
+        },
+        "COT_FIRST": {
+          "count": 11,
+          "share_pct": 27.500000000000004,
+          "accuracy_pct": 63.63636363636363,
+          "oracle_acc_pct": 90.9090909090909,
+          "mean_tokens": 4550.909090909091,
+          "mean_sec": 133.36172727272728
+        }
+      },
+      "category_breakdown": {
+        "Algebra": {
+          "count": 4,
+          "accuracy_pct": 50.0,
+          "adj_accuracy_pct": 50.0,
+          "oracle_acc_pct": 75.0,
+          "mean_samples": 7.0,
+          "mean_tokens": 6523.0,
+          "mean_sec": 186.22175
+        },
+        "Calculus": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 7.0,
+          "mean_tokens": 2583.0,
+          "mean_sec": 56.093
+        },
+        "Calculus / Sequence": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 3.0,
+          "mean_tokens": 1781.0,
+          "mean_sec": 36.708
+        },
+        "Combinatorics": {
+          "count": 9,
+          "accuracy_pct": 66.66666666666666,
+          "adj_accuracy_pct": 66.66666666666666,
+          "oracle_acc_pct": 88.88888888888889,
+          "mean_samples": 6.111111111111111,
+          "mean_tokens": 4113.111111111111,
+          "mean_sec": 111.08022222222222
+        },
+        "Geometry": {
+          "count": 1,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 7.0,
+          "mean_tokens": 3552.0,
+          "mean_sec": 82.125
+        },
+        "Geometry / Algebra": {
+          "count": 1,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 9.0,
+          "mean_tokens": 7170.0,
+          "mean_sec": 169.415
+        },
+        "Linear Algebra": {
+          "count": 2,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 6.0,
+          "mean_tokens": 3786.0,
+          "mean_sec": 92.1205
+        },
+        "Logarithms": {
+          "count": 2,
+          "accuracy_pct": 50.0,
+          "adj_accuracy_pct": 50.0,
+          "oracle_acc_pct": 50.0,
+          "mean_samples": 6.0,
+          "mean_tokens": 4456.5,
+          "mean_sec": 183.57600000000002
+        },
+        "Number Theory": {
+          "count": 10,
+          "accuracy_pct": 90.0,
+          "adj_accuracy_pct": 90.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 4.2,
+          "mean_tokens": 2786.2,
+          "mean_sec": 74.30420000000001
+        },
+        "Polynomials": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 3.0,
+          "mean_tokens": 2501.0,
+          "mean_sec": 47.166
+        },
+        "Probability": {
+          "count": 4,
+          "accuracy_pct": 25.0,
+          "adj_accuracy_pct": 25.0,
+          "oracle_acc_pct": 25.0,
+          "mean_samples": 6.0,
+          "mean_tokens": 5106.75,
+          "mean_sec": 123.60625
+        },
+        "Sequences": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 3.0,
+          "mean_tokens": 1062.0,
+          "mean_sec": 18.318
+        },
+        "Series": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 3.0,
+          "mean_tokens": 2069.0,
+          "mean_sec": 47.063
+        },
+        "Trigonometry": {
+          "count": 2,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 4.0,
+          "mean_tokens": 2453.5,
+          "mean_sec": 67.43299999999999
+        }
+      },
+      "seed_breakdown": {
+        "0": {
+          "count": 40,
+          "accuracy_pct": 70.0,
+          "oracle_acc_pct": 85.0,
+          "mean_tokens": 3837.725,
+          "mean_sec": 103.130575
+        }
+      }
+    },
+    "DUALREF_NOCRIT": {
+      "n": 40,
+      "n_correct": 30,
+      "accuracy_pct": 75.0,
+      "ci95_low_pct": 59.805740933029895,
+      "ci95_high_pct": 85.8130321044505,
+      "false_negative_suspects_count": 0,
+      "adjusted_accuracy_pct": 75.0,
+      "oracle_accuracy_pct": 87.5,
+      "oracle_gap_pct": 12.5,
+      "pal_any_accuracy_pct": 80.0,
+      "cross_validated_rate_pct": 35.0,
+      "accuracy_when_cv_pct": 78.57142857142857,
+      "accuracy_when_not_cv_pct": 73.07692307692307,
+      "llm_calls": {
+        "count": 40,
+        "sum": 255.0,
+        "mean": 6.375,
+        "std": 3.3334935858914574,
+        "min": 3.0,
+        "p50": 5.0,
+        "p90": 11.100000000000001,
+        "p95": 12.0,
+        "p99": 12.61,
+        "max": 13.0
+      },
+      "elapsed_sec": {
+        "count": 40,
+        "sum": 4168.276,
+        "mean": 104.20689999999999,
+        "std": 91.78774758517051,
+        "min": 14.508,
+        "p50": 80.447,
+        "p90": 218.09230000000008,
+        "p95": 280.33904999999993,
+        "p99": 365.59176999999994,
+        "max": 406.759
+      },
+      "prompt_tokens": {
+        "count": 40,
+        "sum": 68111.0,
+        "mean": 1702.775,
+        "std": 1050.0546869153152,
+        "min": 634.0,
+        "p50": 1252.5,
+        "p90": 3265.0000000000005,
+        "p95": 3627.699999999999,
+        "p99": 4107.62,
+        "max": 4163.0
+      },
+      "completion_tokens": {
+        "count": 40,
+        "sum": 62922.0,
+        "mean": 1573.05,
+        "std": 1295.1549743919868,
+        "min": 294.0,
+        "p50": 1188.0,
+        "p90": 3269.8,
+        "p95": 4256.249999999999,
+        "p99": 5237.15,
+        "max": 5594.0
+      },
+      "total_tokens": {
+        "count": 40,
+        "sum": 131033.0,
+        "mean": 3275.825,
+        "std": 2244.6004942631002,
+        "min": 1028.0,
+        "p50": 2290.0,
+        "p90": 6913.400000000001,
+        "p95": 7492.5499999999965,
+        "p99": 8777.47,
+        "max": 8827.0
+      },
+      "tokens_generator_model": {
+        "count": 40,
+        "sum": 131033.0,
+        "mean": 3275.825,
+        "std": 2244.6004942631002,
+        "min": 1028.0,
+        "p50": 2290.0,
+        "p90": 6913.400000000001,
+        "p95": 7492.5499999999965,
+        "p99": 8777.47,
+        "max": 8827.0
+      },
+      "tokens_other_model": {
+        "count": 40,
+        "sum": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "n_samples": {
+        "count": 40,
+        "sum": 218.0,
+        "mean": 5.45,
+        "std": 2.3745444907311253,
+        "min": 3.0,
+        "p50": 5.0,
+        "p90": 9.0,
+        "p95": 9.0,
+        "p99": 9.0,
+        "max": 9.0
+      },
+      "acc_pct_per_1k_tokens": 22.894995917059063,
+      "acc_pct_per_sec": 0.7197220145690929,
+      "truncation_diagnostics": {
+        "any_truncated_pct": 30.0,
+        "cot_truncated_pct": 30.0,
+        "token_estimated_pct": 27.500000000000004,
+        "loop_guard_abort_pct": 0.0
+      },
+      "auxiliary_modules": {
+        "total_pal_calls": 118,
+        "pal_exec_ok": 98,
+        "pal_exec_success_rate_pct": 83.05084745762711,
+        "debug_calls": 27,
+        "debug_fixed": 7,
+        "debug_fix_rate_pct": 25.925925925925924,
+        "critic_calls": 0,
+        "critic_parse_fail": 0,
+        "critic_parse_fail_rate_pct": null,
+        "local_vetoes": 16,
+        "local_veto_rate_pct": 40.0
+      },
+      "stop_reason_breakdown": {
+        "MARGIN": {
+          "count": 20,
+          "share_pct": 50.0,
+          "accuracy_pct": 85.0,
+          "oracle_acc_pct": 95.0,
+          "mean_samples": 5.2,
+          "mean_tokens": 3055.35,
+          "mean_sec": 97.03999999999999
+        },
+        "CROSS_VALIDATED": {
+          "count": 14,
+          "share_pct": 35.0,
+          "accuracy_pct": 78.57142857142857,
+          "oracle_acc_pct": 92.85714285714286,
+          "mean_samples": 4.285714285714286,
+          "mean_tokens": 2148.285714285714,
+          "mean_sec": 63.93964285714286
+        },
+        "KMAX": {
+          "count": 6,
+          "share_pct": 15.0,
+          "accuracy_pct": 33.33333333333333,
+          "oracle_acc_pct": 50.0,
+          "mean_samples": 9.0,
+          "mean_tokens": 6641.666666666667,
+          "mean_sec": 222.05349999999999
+        }
+      },
+      "route_breakdown": {
+        "PAL_FIRST": {
+          "count": 29,
+          "share_pct": 72.5,
+          "accuracy_pct": 68.96551724137932,
+          "oracle_acc_pct": 86.20689655172413,
+          "mean_tokens": 3447.3793103448274,
+          "mean_sec": 110.18327586206897
+        },
+        "COT_FIRST": {
+          "count": 11,
+          "share_pct": 27.500000000000004,
+          "accuracy_pct": 90.9090909090909,
+          "oracle_acc_pct": 90.9090909090909,
+          "mean_tokens": 2823.5454545454545,
+          "mean_sec": 88.45100000000001
+        }
+      },
+      "category_breakdown": {
+        "Algebra": {
+          "count": 4,
+          "accuracy_pct": 75.0,
+          "adj_accuracy_pct": 75.0,
+          "oracle_acc_pct": 75.0,
+          "mean_samples": 6.5,
+          "mean_tokens": 5065.25,
+          "mean_sec": 183.3715
+        },
+        "Calculus": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 5.0,
+          "mean_tokens": 1868.0,
+          "mean_sec": 40.761
+        },
+        "Calculus / Sequence": {
+          "count": 1,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 9.0,
+          "mean_tokens": 4759.0,
+          "mean_sec": 141.255
+        },
+        "Combinatorics": {
+          "count": 9,
+          "accuracy_pct": 55.55555555555556,
+          "adj_accuracy_pct": 55.55555555555556,
+          "oracle_acc_pct": 77.77777777777779,
+          "mean_samples": 5.888888888888889,
+          "mean_tokens": 3776.1111111111113,
+          "mean_sec": 117.84911111111111
+        },
+        "Geometry": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 9.0,
+          "mean_tokens": 4176.0,
+          "mean_sec": 106.91
+        },
+        "Geometry / Algebra": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 3.0,
+          "mean_tokens": 1786.0,
+          "mean_sec": 67.132
+        },
+        "Linear Algebra": {
+          "count": 2,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 6.0,
+          "mean_tokens": 2464.0,
+          "mean_sec": 48.5145
+        },
+        "Logarithms": {
+          "count": 2,
+          "accuracy_pct": 50.0,
+          "adj_accuracy_pct": 50.0,
+          "oracle_acc_pct": 50.0,
+          "mean_samples": 4.0,
+          "mean_tokens": 1449.5,
+          "mean_sec": 29.3065
+        },
+        "Number Theory": {
+          "count": 10,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 4.0,
+          "mean_tokens": 2456.7,
+          "mean_sec": 89.4637
+        },
+        "Polynomials": {
+          "count": 1,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 5.0,
+          "mean_tokens": 3998.0,
+          "mean_sec": 183.461
+        },
+        "Probability": {
+          "count": 4,
+          "accuracy_pct": 50.0,
+          "adj_accuracy_pct": 50.0,
+          "oracle_acc_pct": 75.0,
+          "mean_samples": 7.5,
+          "mean_tokens": 5174.0,
+          "mean_sec": 144.59725
+        },
+        "Sequences": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 3.0,
+          "mean_tokens": 1028.0,
+          "mean_sec": 17.077
+        },
+        "Series": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 5.0,
+          "mean_tokens": 1842.0,
+          "mean_sec": 35.321
+        },
+        "Trigonometry": {
+          "count": 2,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": 100.0,
+          "mean_samples": 5.0,
+          "mean_tokens": 2120.0,
+          "mean_sec": 76.7815
+        }
+      },
+      "seed_breakdown": {
+        "0": {
+          "count": 40,
+          "accuracy_pct": 75.0,
+          "oracle_acc_pct": 87.5,
+          "mean_tokens": 3275.825,
+          "mean_sec": 104.20689999999999
+        }
+      }
+    },
+    "PAL@5": {
+      "n": 40,
+      "n_correct": 28,
+      "accuracy_pct": 70.0,
+      "ci95_low_pct": 54.56968934567959,
+      "ci95_high_pct": 81.92532908430469,
+      "false_negative_suspects_count": 0,
+      "adjusted_accuracy_pct": 70.0,
+      "oracle_accuracy_pct": null,
+      "oracle_gap_pct": null,
+      "pal_any_accuracy_pct": null,
+      "cross_validated_rate_pct": null,
+      "accuracy_when_cv_pct": null,
+      "accuracy_when_not_cv_pct": 70.0,
+      "llm_calls": {
+        "count": 40,
+        "sum": 245.0,
+        "mean": 6.125,
+        "std": 1.304577738934356,
+        "min": 5.0,
+        "p50": 6.0,
+        "p90": 8.0,
+        "p95": 9.0,
+        "p99": 9.0,
+        "max": 9.0
+      },
+      "elapsed_sec": {
+        "count": 40,
+        "sum": 1902.372,
+        "mean": 47.5593,
+        "std": 28.073958932863434,
+        "min": 15.101,
+        "p50": 41.494,
+        "p90": 85.8497,
+        "p95": 88.67989999999993,
+        "p99": 129.32648999999998,
+        "max": 142.317
+      },
+      "prompt_tokens": {
+        "count": 40,
+        "sum": 80101.0,
+        "mean": 2002.525,
+        "std": 542.7125596813634,
+        "min": 1500.0,
+        "p50": 1852.5,
+        "p90": 2809.1000000000004,
+        "p95": 2960.9499999999994,
+        "p99": 3466.2499999999995,
+        "max": 3632.0
+      },
+      "completion_tokens": {
+        "count": 40,
+        "sum": 38033.0,
+        "mean": 950.825,
+        "std": 605.1821886095595,
+        "min": 312.0,
+        "p50": 742.0,
+        "p90": 1927.5,
+        "p95": 2014.9999999999986,
+        "p99": 2663.67,
+        "max": 2799.0
+      },
+      "total_tokens": {
+        "count": 40,
+        "sum": 118134.0,
+        "mean": 2953.35,
+        "std": 1131.5247835984133,
+        "min": 1859.0,
+        "p50": 2554.0,
+        "p90": 4598.900000000001,
+        "p95": 4975.949999999997,
+        "p99": 6129.92,
+        "max": 6431.0
+      },
+      "tokens_generator_model": {
+        "count": 40,
+        "sum": 118134.0,
+        "mean": 2953.35,
+        "std": 1131.5247835984133,
+        "min": 1859.0,
+        "p50": 2554.0,
+        "p90": 4598.900000000001,
+        "p95": 4975.949999999997,
+        "p99": 6129.92,
+        "max": 6431.0
+      },
+      "tokens_other_model": {
+        "count": 40,
+        "sum": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "n_samples": {
+        "count": 0,
+        "sum": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "acc_pct_per_1k_tokens": 23.70189784482029,
+      "acc_pct_per_sec": 1.4718467260872217,
+      "truncation_diagnostics": {
+        "any_truncated_pct": 0.0,
+        "cot_truncated_pct": 0.0,
+        "token_estimated_pct": 0.0,
+        "loop_guard_abort_pct": 0.0
+      },
+      "auxiliary_modules": {
+        "total_pal_calls": 0,
+        "pal_exec_ok": 175,
+        "pal_exec_success_rate_pct": null,
+        "debug_calls": 45,
+        "debug_fixed": 20,
+        "debug_fix_rate_pct": 44.44444444444444,
+        "critic_calls": 0,
+        "critic_parse_fail": 0,
+        "critic_parse_fail_rate_pct": null,
+        "local_vetoes": 0,
+        "local_veto_rate_pct": 0.0
+      },
+      "stop_reason_breakdown": {
+        "K_SAMPLES_VOTE": {
+          "count": 40,
+          "share_pct": 100.0,
+          "accuracy_pct": 70.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 2953.35,
+          "mean_sec": 47.5593
+        }
+      },
+      "route_breakdown": {},
+      "category_breakdown": {
+        "Algebra": {
+          "count": 4,
+          "accuracy_pct": 75.0,
+          "adj_accuracy_pct": 75.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 3177.75,
+          "mean_sec": 58.51275
+        },
+        "Calculus": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 2164.0,
+          "mean_sec": 29.882
+        },
+        "Calculus / Sequence": {
+          "count": 1,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 2717.0,
+          "mean_sec": 44.443
+        },
+        "Combinatorics": {
+          "count": 9,
+          "accuracy_pct": 55.55555555555556,
+          "adj_accuracy_pct": 55.55555555555556,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 2604.0,
+          "mean_sec": 38.718111111111114
+        },
+        "Geometry": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 4235.0,
+          "mean_sec": 70.362
+        },
+        "Geometry / Algebra": {
+          "count": 1,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 4886.0,
+          "mean_sec": 87.61
+        },
+        "Linear Algebra": {
+          "count": 2,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 4524.5,
+          "mean_sec": 74.271
+        },
+        "Logarithms": {
+          "count": 2,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 1933.5,
+          "mean_sec": 18.5565
+        },
+        "Number Theory": {
+          "count": 10,
+          "accuracy_pct": 90.0,
+          "adj_accuracy_pct": 90.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 2829.8,
+          "mean_sec": 43.486599999999996
+        },
+        "Polynomials": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 3442.0,
+          "mean_sec": 57.378
+        },
+        "Probability": {
+          "count": 4,
+          "accuracy_pct": 50.0,
+          "adj_accuracy_pct": 50.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 3588.0,
+          "mean_sec": 68.15225000000001
+        },
+        "Sequences": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 2256.0,
+          "mean_sec": 34.828
+        },
+        "Series": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 2548.0,
+          "mean_sec": 63.57
+        },
+        "Trigonometry": {
+          "count": 2,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 2086.5,
+          "mean_sec": 19.3275
+        }
+      },
+      "seed_breakdown": {
+        "0": {
+          "count": 40,
+          "accuracy_pct": 70.0,
+          "oracle_acc_pct": null,
+          "mean_tokens": 2953.35,
+          "mean_sec": 47.5593
+        }
+      }
+    },
+    "SC@5": {
+      "n": 40,
+      "n_correct": 13,
+      "accuracy_pct": 32.5,
+      "ci95_low_pct": 20.084316962661728,
+      "ci95_high_pct": 47.982541911102025,
+      "false_negative_suspects_count": 0,
+      "adjusted_accuracy_pct": 32.5,
+      "oracle_accuracy_pct": null,
+      "oracle_gap_pct": null,
+      "pal_any_accuracy_pct": null,
+      "cross_validated_rate_pct": null,
+      "accuracy_when_cv_pct": null,
+      "accuracy_when_not_cv_pct": 32.5,
+      "llm_calls": {
+        "count": 40,
+        "sum": 227.0,
+        "mean": 5.675,
+        "std": 0.7970297423913428,
+        "min": 5.0,
+        "p50": 5.5,
+        "p90": 7.0,
+        "p95": 7.0,
+        "p99": 7.609999999999999,
+        "max": 8.0
+      },
+      "elapsed_sec": {
+        "count": 40,
+        "sum": 4221.362,
+        "mean": 105.53405000000001,
+        "std": 63.634087835159704,
+        "min": 25.921,
+        "p50": 97.895,
+        "p90": 217.6117,
+        "p95": 226.49314999999999,
+        "p99": 253.48686999999998,
+        "max": 268.411
+      },
+      "prompt_tokens": {
+        "count": 40,
+        "sum": 42641.0,
+        "mean": 1066.025,
+        "std": 361.5503289787127,
+        "min": 710.0,
+        "p50": 965.5,
+        "p90": 1647.1000000000001,
+        "p95": 1946.1999999999996,
+        "p99": 2062.69,
+        "max": 2074.0
+      },
+      "completion_tokens": {
+        "count": 40,
+        "sum": 78162.0,
+        "mean": 1954.05,
+        "std": 1036.7314502801582,
+        "min": 547.0,
+        "p50": 1864.5,
+        "p90": 3151.3,
+        "p95": 3409.349999999997,
+        "p99": 4405.65,
+        "max": 4431.0
+      },
+      "total_tokens": {
+        "count": 40,
+        "sum": 120803.0,
+        "mean": 3020.075,
+        "std": 1177.2362982524269,
+        "min": 1437.0,
+        "p50": 2873.5,
+        "p90": 4518.7,
+        "p95": 4878.9,
+        "p99": 5522.69,
+        "max": 5729.0
+      },
+      "tokens_generator_model": {
+        "count": 40,
+        "sum": 120803.0,
+        "mean": 3020.075,
+        "std": 1177.2362982524269,
+        "min": 1437.0,
+        "p50": 2873.5,
+        "p90": 4518.7,
+        "p95": 4878.9,
+        "p99": 5522.69,
+        "max": 5729.0
+      },
+      "tokens_other_model": {
+        "count": 40,
+        "sum": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "n_samples": {
+        "count": 0,
+        "sum": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "acc_pct_per_1k_tokens": 10.761322152595548,
+      "acc_pct_per_sec": 0.30795747912640514,
+      "truncation_diagnostics": {
+        "any_truncated_pct": 0.0,
+        "cot_truncated_pct": 0.0,
+        "token_estimated_pct": 30.0,
+        "loop_guard_abort_pct": 0.0
+      },
+      "auxiliary_modules": {
+        "total_pal_calls": 0,
+        "pal_exec_ok": 0,
+        "pal_exec_success_rate_pct": null,
+        "debug_calls": 0,
+        "debug_fixed": 0,
+        "debug_fix_rate_pct": null,
+        "critic_calls": 0,
+        "critic_parse_fail": 0,
+        "critic_parse_fail_rate_pct": null,
+        "local_vetoes": 0,
+        "local_veto_rate_pct": 0.0
+      },
+      "stop_reason_breakdown": {
+        "K_SAMPLES_VOTE": {
+          "count": 40,
+          "share_pct": 100.0,
+          "accuracy_pct": 32.5,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 3020.075,
+          "mean_sec": 105.53405000000001
+        }
+      },
+      "route_breakdown": {},
+      "category_breakdown": {
+        "Algebra": {
+          "count": 4,
+          "accuracy_pct": 25.0,
+          "adj_accuracy_pct": 25.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 4071.0,
+          "mean_sec": 166.39675
+        },
+        "Calculus": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 1950.0,
+          "mean_sec": 49.892
+        },
+        "Calculus / Sequence": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 2830.0,
+          "mean_sec": 93.995
+        },
+        "Combinatorics": {
+          "count": 9,
+          "accuracy_pct": 11.11111111111111,
+          "adj_accuracy_pct": 11.11111111111111,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 3442.0,
+          "mean_sec": 113.90666666666668
+        },
+        "Geometry": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 3117.0,
+          "mean_sec": 83.824
+        },
+        "Geometry / Algebra": {
+          "count": 1,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 3109.0,
+          "mean_sec": 117.617
+        },
+        "Linear Algebra": {
+          "count": 2,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 1721.5,
+          "mean_sec": 37.3445
+        },
+        "Logarithms": {
+          "count": 2,
+          "accuracy_pct": 50.0,
+          "adj_accuracy_pct": 50.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 2325.5,
+          "mean_sec": 81.957
+        },
+        "Number Theory": {
+          "count": 10,
+          "accuracy_pct": 10.0,
+          "adj_accuracy_pct": 10.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 3006.1,
+          "mean_sec": 112.7
+        },
+        "Polynomials": {
+          "count": 1,
+          "accuracy_pct": 0.0,
+          "adj_accuracy_pct": 0.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 2400.0,
+          "mean_sec": 76.472
+        },
+        "Probability": {
+          "count": 4,
+          "accuracy_pct": 25.0,
+          "adj_accuracy_pct": 25.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 3202.25,
+          "mean_sec": 99.03049999999999
+        },
+        "Sequences": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 1500.0,
+          "mean_sec": 34.763
+        },
+        "Series": {
+          "count": 1,
+          "accuracy_pct": 100.0,
+          "adj_accuracy_pct": 100.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 1792.0,
+          "mean_sec": 46.831
+        },
+        "Trigonometry": {
+          "count": 2,
+          "accuracy_pct": 50.0,
+          "adj_accuracy_pct": 50.0,
+          "oracle_acc_pct": null,
+          "mean_samples": 0.0,
+          "mean_tokens": 2939.5,
+          "mean_sec": 132.748
+        }
+      },
+      "seed_breakdown": {
+        "0": {
+          "count": 40,
+          "accuracy_pct": 32.5,
+          "oracle_acc_pct": null,
+          "mean_tokens": 3020.075,
+          "mean_sec": 105.53405000000001
+        }
+      }
+    }
+  },
+  "paired_comparisons": [
+    {
+      "baseline": "DIRECT",
+      "target": "DUALREF",
+      "paired_count": 40,
+      "wins_0_to_1": 17,
+      "losses_1_to_0": 2,
+      "net_gain": 15,
+      "net_gain_pct": 37.5,
+      "both_correct": 11,
+      "both_wrong": 10,
+      "mcnemar": {
+        "b_wins": 17,
+        "c_losses": 2,
+        "chi2": 10.31578947368421,
+        "p_value": 0.000728607177734375
+      },
+      "by_category": {
+        "Algebra": {
+          "n": 4,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 50.0,
+          "diff_pct": 50.0,
+          "wins": 2,
+          "losses": 0,
+          "net_gain": 2
+        },
+        "Calculus": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Calculus / Sequence": {
+          "n": 1,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 100.0,
+          "wins": 1,
+          "losses": 0,
+          "net_gain": 1
+        },
+        "Combinatorics": {
+          "n": 9,
+          "base_acc_pct": 22.22222222222222,
+          "target_acc_pct": 66.66666666666666,
+          "diff_pct": 44.44444444444444,
+          "wins": 4,
+          "losses": 0,
+          "net_gain": 4
+        },
+        "Geometry": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 0.0,
+          "diff_pct": -100.0,
+          "wins": 0,
+          "losses": 1,
+          "net_gain": -1
+        },
+        "Geometry / Algebra": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 0.0,
+          "diff_pct": -100.0,
+          "wins": 0,
+          "losses": 1,
+          "net_gain": -1
+        },
+        "Linear Algebra": {
+          "n": 2,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Logarithms": {
+          "n": 2,
+          "base_acc_pct": 50.0,
+          "target_acc_pct": 50.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Number Theory": {
+          "n": 10,
+          "base_acc_pct": 30.0,
+          "target_acc_pct": 90.0,
+          "diff_pct": 60.0,
+          "wins": 6,
+          "losses": 0,
+          "net_gain": 6
+        },
+        "Polynomials": {
+          "n": 1,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 100.0,
+          "wins": 1,
+          "losses": 0,
+          "net_gain": 1
+        },
+        "Probability": {
+          "n": 4,
+          "base_acc_pct": 25.0,
+          "target_acc_pct": 25.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Sequences": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Series": {
+          "n": 1,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 100.0,
+          "wins": 1,
+          "losses": 0,
+          "net_gain": 1
+        },
+        "Trigonometry": {
+          "n": 2,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 100.0,
+          "wins": 2,
+          "losses": 0,
+          "net_gain": 2
+        }
+      }
+    },
+    {
+      "baseline": "DIRECT",
+      "target": "DUALREF_NOCRIT",
+      "paired_count": 40,
+      "wins_0_to_1": 18,
+      "losses_1_to_0": 1,
+      "net_gain": 17,
+      "net_gain_pct": 42.5,
+      "both_correct": 12,
+      "both_wrong": 9,
+      "mcnemar": {
+        "b_wins": 18,
+        "c_losses": 1,
+        "chi2": 13.473684210526315,
+        "p_value": 7.62939453125e-05
+      },
+      "by_category": {
+        "Algebra": {
+          "n": 4,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 75.0,
+          "diff_pct": 75.0,
+          "wins": 3,
+          "losses": 0,
+          "net_gain": 3
+        },
+        "Calculus": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Calculus / Sequence": {
+          "n": 1,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 0.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Combinatorics": {
+          "n": 9,
+          "base_acc_pct": 22.22222222222222,
+          "target_acc_pct": 55.55555555555556,
+          "diff_pct": 33.33333333333333,
+          "wins": 4,
+          "losses": 1,
+          "net_gain": 3
+        },
+        "Geometry": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Geometry / Algebra": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Linear Algebra": {
+          "n": 2,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Logarithms": {
+          "n": 2,
+          "base_acc_pct": 50.0,
+          "target_acc_pct": 50.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Number Theory": {
+          "n": 10,
+          "base_acc_pct": 30.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 70.0,
+          "wins": 7,
+          "losses": 0,
+          "net_gain": 7
+        },
+        "Polynomials": {
+          "n": 1,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 0.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Probability": {
+          "n": 4,
+          "base_acc_pct": 25.0,
+          "target_acc_pct": 50.0,
+          "diff_pct": 25.0,
+          "wins": 1,
+          "losses": 0,
+          "net_gain": 1
+        },
+        "Sequences": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Series": {
+          "n": 1,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 100.0,
+          "wins": 1,
+          "losses": 0,
+          "net_gain": 1
+        },
+        "Trigonometry": {
+          "n": 2,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 100.0,
+          "wins": 2,
+          "losses": 0,
+          "net_gain": 2
+        }
+      }
+    },
+    {
+      "baseline": "DIRECT",
+      "target": "PAL@5",
+      "paired_count": 40,
+      "wins_0_to_1": 18,
+      "losses_1_to_0": 3,
+      "net_gain": 15,
+      "net_gain_pct": 37.5,
+      "both_correct": 10,
+      "both_wrong": 9,
+      "mcnemar": {
+        "b_wins": 18,
+        "c_losses": 3,
+        "chi2": 9.333333333333334,
+        "p_value": 0.0014896392822265625
+      },
+      "by_category": {
+        "Algebra": {
+          "n": 4,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 75.0,
+          "diff_pct": 75.0,
+          "wins": 3,
+          "losses": 0,
+          "net_gain": 3
+        },
+        "Calculus": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Calculus / Sequence": {
+          "n": 1,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 0.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Combinatorics": {
+          "n": 9,
+          "base_acc_pct": 22.22222222222222,
+          "target_acc_pct": 55.55555555555556,
+          "diff_pct": 33.33333333333333,
+          "wins": 4,
+          "losses": 1,
+          "net_gain": 3
+        },
+        "Geometry": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Geometry / Algebra": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 0.0,
+          "diff_pct": -100.0,
+          "wins": 0,
+          "losses": 1,
+          "net_gain": -1
+        },
+        "Linear Algebra": {
+          "n": 2,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Logarithms": {
+          "n": 2,
+          "base_acc_pct": 50.0,
+          "target_acc_pct": 0.0,
+          "diff_pct": -50.0,
+          "wins": 0,
+          "losses": 1,
+          "net_gain": -1
+        },
+        "Number Theory": {
+          "n": 10,
+          "base_acc_pct": 30.0,
+          "target_acc_pct": 90.0,
+          "diff_pct": 60.0,
+          "wins": 6,
+          "losses": 0,
+          "net_gain": 6
+        },
+        "Polynomials": {
+          "n": 1,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 100.0,
+          "wins": 1,
+          "losses": 0,
+          "net_gain": 1
+        },
+        "Probability": {
+          "n": 4,
+          "base_acc_pct": 25.0,
+          "target_acc_pct": 50.0,
+          "diff_pct": 25.0,
+          "wins": 1,
+          "losses": 0,
+          "net_gain": 1
+        },
+        "Sequences": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Series": {
+          "n": 1,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 100.0,
+          "wins": 1,
+          "losses": 0,
+          "net_gain": 1
+        },
+        "Trigonometry": {
+          "n": 2,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 100.0,
+          "wins": 2,
+          "losses": 0,
+          "net_gain": 2
+        }
+      }
+    },
+    {
+      "baseline": "DIRECT",
+      "target": "SC@5",
+      "paired_count": 40,
+      "wins_0_to_1": 4,
+      "losses_1_to_0": 4,
+      "net_gain": 0,
+      "net_gain_pct": 0.0,
+      "both_correct": 9,
+      "both_wrong": 23,
+      "mcnemar": {
+        "b_wins": 4,
+        "c_losses": 4,
+        "chi2": 0.0,
+        "p_value": 1.0
+      },
+      "by_category": {
+        "Algebra": {
+          "n": 4,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 25.0,
+          "diff_pct": 25.0,
+          "wins": 1,
+          "losses": 0,
+          "net_gain": 1
+        },
+        "Calculus": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Calculus / Sequence": {
+          "n": 1,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 100.0,
+          "wins": 1,
+          "losses": 0,
+          "net_gain": 1
+        },
+        "Combinatorics": {
+          "n": 9,
+          "base_acc_pct": 22.22222222222222,
+          "target_acc_pct": 11.11111111111111,
+          "diff_pct": -11.11111111111111,
+          "wins": 0,
+          "losses": 1,
+          "net_gain": -1
+        },
+        "Geometry": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Geometry / Algebra": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 0.0,
+          "diff_pct": -100.0,
+          "wins": 0,
+          "losses": 1,
+          "net_gain": -1
+        },
+        "Linear Algebra": {
+          "n": 2,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Logarithms": {
+          "n": 2,
+          "base_acc_pct": 50.0,
+          "target_acc_pct": 50.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Number Theory": {
+          "n": 10,
+          "base_acc_pct": 30.0,
+          "target_acc_pct": 10.0,
+          "diff_pct": -20.0,
+          "wins": 0,
+          "losses": 2,
+          "net_gain": -2
+        },
+        "Polynomials": {
+          "n": 1,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 0.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Probability": {
+          "n": 4,
+          "base_acc_pct": 25.0,
+          "target_acc_pct": 25.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Sequences": {
+          "n": 1,
+          "base_acc_pct": 100.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "net_gain": 0
+        },
+        "Series": {
+          "n": 1,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 100.0,
+          "diff_pct": 100.0,
+          "wins": 1,
+          "losses": 0,
+          "net_gain": 1
+        },
+        "Trigonometry": {
+          "n": 2,
+          "base_acc_pct": 0.0,
+          "target_acc_pct": 50.0,
+          "diff_pct": 50.0,
+          "wins": 1,
+          "losses": 0,
+          "net_gain": 1
+        }
+      }
+    }
+  ],
+  "anomaly_counts": {
+    "EXTRACTION_OR_VOTE_POLLUTION": 11,
+    "TOKEN_ESTIMATED_FALLBACK": 35,
+    "REGRESSION_VS_BASELINE": 10,
+    "ORACLE_LOSS": 11,
+    "FALSE_CROSS_VALIDATION": 6
+  }
+}
