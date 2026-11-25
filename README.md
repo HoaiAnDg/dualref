@@ -1,8 +1,8 @@
-# DualRef: Adaptive Hybrid Reasoning and Verification Architecture for Small Language Models
+# DualRef: An Architecture for Optimizing Multi-Step Reasoning in Small Language Models
 
 Official code and benchmark artifacts for the paper:
 **"DualRef: Adaptive Hybrid Reasoning and Verification Architecture for Small Language Models"**
-*Dinh-Hong Vu, Hoai-An Duong, Nhat-Hao Ho — Ton Duc Thang University*
+*Dinh-Hong Vu, Hoai-An Duong, Nhat-Hao Ho, Anh-Cuong Le — Ton Duc Thang University*
 
 ## Repository Structure
 
