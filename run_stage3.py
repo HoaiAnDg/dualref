@@ -748,7 +748,7 @@ def parse_args() -> argparse.Namespace:
                     help="1: Full dataset (DIRECT vs DUALREF) | 2: Stratified curves & ablation | 3: Custom-40")
     ap.add_argument("--dataset", default=None,
                     help="Đường dẫn tệp dữ liệu (.jsonl/.json/.csv), vd: gsm8k_test_1000.jsonl (bỏ trống = MATH-500)")
-    ap.add_argument("--math500-cache", default="math500_phase2_test.jsonl", help="File cache MATH-500 JSONL")
+    ap.add_argument("--math500-cache", default="math500_test.jsonl", help="File cache MATH-500 JSONL")
     ap.add_argument("--sample-n", type=int, default=300,
                     help="Số bài lấy mẫu phân tầng cho Batch 2 (mặc định: 300)")
     ap.add_argument("--limit", type=int, default=None, help="Giới hạn N bài đầu (dùng để chạy thử nhanh)")

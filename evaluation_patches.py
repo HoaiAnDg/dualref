@@ -1133,28 +1133,32 @@ def eval_pool_at_k(record: Dict[str, Any], ks: Tuple[int, ...] = (1, 3, 5, 7, 9,
 # ======================================================================
 DATASET_40 = DATASET_20[:40]
 
-MATH500_URL = "https://media.githubusercontent.com/media/openai/prm800k/main/prm800k/data/phase2_test.jsonl"
+MATH500_URL = "https://media.githubusercontent.com/media/openai/prm800k/main/prm800k/math_splits/test.jsonl"
 
 
-def load_math500(cache_path: str = "math500_phase2_test.jsonl", url: str = MATH500_URL) -> List[Dict[str, str]]:
-    """Tải (và cache cục bộ) tập chuẩn MATH-500 của OpenAI PRM800K."""
+def load_math500(cache_path: str = "math500_test.jsonl", url: str = MATH500_URL) -> List[Dict[str, str]]:
+    """Tải (và cache cục bộ) tập chuẩn MATH-500 (math_splits/test.jsonl) của OpenAI PRM800K."""
     if not os.path.exists(cache_path):
         import urllib.request
         print(f"Đang tải MATH-500 từ {url} ...")
         urllib.request.urlretrieve(url, cache_path)
     items: List[Dict[str, str]] = []
+    seen_problems = set()
     with open(cache_path, "r", encoding="utf-8") as f:
-        for i, line in enumerate(f):
+        for line in f:
             if not line.strip():
                 continue
             row = json.loads(line)
             q = row.get("question", row)
             problem = str(q.get("problem", "")).strip()
+            if not problem or problem in seen_problems:
+                continue
+            seen_problems.add(problem)
             gt = q.get("ground_truth_answer") or row.get("answer")
             if not gt:
                 gt = extract_final_answer(q.get("ground_truth_solution", "")) or ""
             items.append({
-                "id": f"MATH500_{i:04d}",
+                "id": f"MATH500_{len(items):04d}",
                 "category": str(q.get("subject") or row.get("subject") or "unknown"),
                 "level": str(q.get("level") or row.get("level") or ""),
                 "problem": problem,
